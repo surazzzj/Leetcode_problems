@@ -1,7 +1,6 @@
+// Sort Array By Parity
 
 import java.util.Arrays;
-
-// Sort Array By Parity
 
 public class SortArrayByParity {
     public static void main(String[] args) {

@@ -1,0 +1,37 @@
+public class ReverseInteger {
+    public static void main(String[] args) {
+
+        int num = 123;
+        System.out.println("Reversed Number: " + reverseNumber(num));
+
+    }
+
+    static int reverseNumber(int x) {
+        int rev = 0;
+
+        while (x != 0) {
+            int digit = x % 10;
+
+            if (rev > Integer.MAX_VALUE / 10) {
+                return 0;
+            }
+
+            if (rev == Integer.MAX_VALUE / 10 && digit > 7) {
+                return 0;
+            }
+
+            if (rev < Integer.MIN_VALUE / 10) {
+                return 0;
+            }
+
+            if (rev == Integer.MIN_VALUE / 10 && digit < -8) {
+                return 0;
+            }
+
+            rev = rev * 10 + digit;
+            x = x / 10;
+        }
+        return rev;
+
+    }
+}

@@ -4,31 +4,31 @@
 
 import java.util.*;
 
-// public class UnionOfTwoSortedArrays {
-//     public static void main(String[] args) {
+public class UnionOfTwoSortedArrays {
+    public static void main(String[] args) {
 
-//         int[] nums1 = { 3, 4, 6, 7, 9, 9 };
-//         int[] nums2 = { 1, 5, 7, 8, 8 };
+        int[] nums1 = { 3, 4, 6, 7, 9, 9 };
+        int[] nums2 = { 1, 5, 7, 8, 8 };
 
-//         Set<Integer> set = new HashSet<>();
+        Set<Integer> set = new HashSet<>();
 
-//         for (int num : nums1) {
-//             set.add(num);
-//         }
+        for (int num : nums1) {
+            set.add(num);
+        }
 
-//         for (int num : nums2) {
-//             set.add(num);
-//         }
+        for (int num : nums2) {
+            set.add(num);
+        }
 
-//         List<Integer> list = new ArrayList<>(set);
+        List<Integer> list = new ArrayList<>(set);
 
-//         Collections.sort(list);
+        Collections.sort(list);
 
-//         for (int num : list) {
-//             System.err.print(num + " ");
-//         }
-//     }
-// }
+        for (int num : list) {
+            System.err.print(num + " ");
+        }
+    }
+}
 
 // Time complexity - O((n + m) log(n + m)) (due to sorting)
 // Space complexity - O(n + m)
@@ -88,3 +88,7 @@ public class UnionOfTwoSortedArrays {
         return result;
     }
 }
+
+
+// Time complexity - O(n + m) (best possible)
+// Space complexity - O(n + m) (for result)

@@ -6,7 +6,7 @@ public class MajorityElement1 {
     public static void main(String[] args) {
 
         int[] nums = { 7, 0, 0, 1, 7, 7, 2, 7, 7 };
-        System.err.println(majorityElement(nums));
+        System.err.println(majorityElement(nums));                  
 
     }
 

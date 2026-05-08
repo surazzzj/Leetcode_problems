@@ -40,7 +40,7 @@ public class TwoSum {
         int target = 7;
 
         int[] result = twoSum(nums, target);
-        System.err.println(result[0] + ", " + result[1]);
+        System.out.println(result[0] + ", " + result[1]);
 
     }
 

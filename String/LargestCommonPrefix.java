@@ -18,7 +18,7 @@ public class LargestCommonPrefix {
         for (int i = 0; i < first.length(); i++) {
             char currChar = first.charAt(i);
 
-            for (int j = 1; j < strs.length - 1; j++) {
+            for (int j = 1; j < strs.length; j++) {
                 if (i >= strs[j].length() || strs[j].charAt(i) != currChar) {
                     return first.substring(0, i);
                 }
@@ -30,3 +30,7 @@ public class LargestCommonPrefix {
     }
 
 }
+
+
+// Time complexity - O(n * m)
+// Space complexity - O(1)

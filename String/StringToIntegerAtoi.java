@@ -64,3 +64,7 @@ public class StringToIntegerAtoi {
 
     }
 }
+
+
+// Time complexity - O(n)
+// Space complexity - O(1)

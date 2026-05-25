@@ -7,7 +7,7 @@ public class MergeSortedArray {
         
         int m = 3;  // Number of actual elements in nums1
         int n = 3;  // Number of elements in nums2
-        
+            
         merge(nums1, m, nums2, n);
         
         // Print the result

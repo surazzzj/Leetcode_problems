@@ -2,7 +2,7 @@
 
 public class FindIndexofFirstOccurrenceInString {
     public static void main(String[] args) {
-
+        
         String heystack = "sadbutsad";
         String needle = "sad";
         System.out.println(strStr(heystack, needle));

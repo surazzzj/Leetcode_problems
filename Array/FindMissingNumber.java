@@ -96,4 +96,4 @@ public class FindMissingNumber {
 }
 
 // Time complexity - O(n)
-// Space complexity - 0(n)
+// Space complexity - 0(1)

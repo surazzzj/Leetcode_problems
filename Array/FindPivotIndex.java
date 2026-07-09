@@ -12,21 +12,21 @@ public class FindPivotIndex {
 
         int rightSum = 0;
 
-        for (int i = 0; i < nums.length; i++) {
-            rightSum += nums[i];
+        for (int num : nums) {
+            rightSum += num;
         }
 
         int leftSum = 0;
 
         for (int i = 0; i < nums.length; i++) {
-            if (leftSum == rightSum - nums[i]) {
+
+            if (leftSum == rightSum - leftSum - nums[i]) {
                 return i;
             }
+
             leftSum += nums[i];
-            rightSum -= nums[i];
         }
 
         return -1;
-
     }
 }

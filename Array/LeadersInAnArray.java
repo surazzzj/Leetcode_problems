@@ -51,7 +51,7 @@ public class LeadersInAnArray {
 
     public static List<Integer> findLeaders(int[] nums) {
 
-        List<Integer> leaders = new ArrayList<>();
+       LinkedList<Integer> leaders = new LinkedList<>();
 
         int n = nums.length;
         int maxRight = nums[n - 1];
@@ -60,12 +60,10 @@ public class LeadersInAnArray {
 
         for (int i = n - 2; i >= 0; i--) {
             if (nums[i] > maxRight) {
-                leaders.add(nums[i]);
+               leaders.addFirst(nums[i]);
                 maxRight = nums[i];
             }
         }
-
-        Collections.reverse(leaders);
 
         return leaders;
 

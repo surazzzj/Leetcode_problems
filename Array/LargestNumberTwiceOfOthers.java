@@ -9,8 +9,8 @@ public class LargestNumberTwiceOfOthers {
     }
 
     static int dominantIndex(int[] nums) {
-        int max1 = -1;
-        int max2 = -1;
+        int max1 = Integer.MIN_VALUE;
+        int max2 = Integer.MIN_VALUE;
         int idx = -1;
 
         for(int i=0; i<nums.length; i++){
@@ -26,3 +26,6 @@ public class LargestNumberTwiceOfOthers {
         return (max1 >= (2 * max2) ? idx : -1);
     }
 }
+
+// Time Complexity : O(n)
+// Space Complexity : O(1)

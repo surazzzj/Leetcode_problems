@@ -33,13 +33,7 @@ public class UnionOfTwoSortedArrays {
 // Time complexity - O((n + m) log(n + m)) (due to sorting)
 // Space complexity - O(n + m)
 
-
-
-
 /*----------------------------------------------------------------------------------------------------------------------------------------- */
-
-
-
 
 // Optimal Approach -
 
@@ -59,12 +53,12 @@ public class UnionOfTwoSortedArrays {
 
         while (i < nums1.length && j < nums2.length) {
             if (nums1[i] <= nums2[j]) {
-                if (result.size() == 0 || result.get(result.size() - 1) != nums1[i]) {
+                if (result.isEmpty() || !result.get(result.size() - 1).equals(nums1[i])) {
                     result.add(nums1[i]);
                 }
                 i++;
             } else {
-                if (result.size() == 0 || result.get(result.size() - 1) != nums2[j]) {
+                if (result.isEmpty() || !result.get(result.size() - 1).equals(nums2[j])) {
                     result.add(nums2[j]);
                 }
                 j++;
@@ -72,14 +66,14 @@ public class UnionOfTwoSortedArrays {
         }
 
         while (i < nums1.length) {
-            if (result.size() == 0 || result.get(result.size() - 1) != nums1[i]) {
+            if (result.isEmpty() || !result.get(result.size() - 1).equals(nums1[i])) {
                 result.add(nums1[i]);
             }
             i++;
         }
 
         while (j < nums2.length) {
-            if (result.size() == 0 || result.get(result.size() - 1) != nums2[j]) {
+            if (result.isEmpty() || !result.get(result.size() - 1).equals(nums2[j])) {
                 result.add(nums2[j]);
             }
             j++;
@@ -88,7 +82,6 @@ public class UnionOfTwoSortedArrays {
         return result;
     }
 }
-
 
 // Time complexity - O(n + m) (best possible)
 // Space complexity - O(n + m) (for result)

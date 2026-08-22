@@ -25,7 +25,7 @@ public class SortArrayByParity {
         }
 
         for (int i = 0; i < arr.length; i++) {
-            if (arr[i] % 2 == 1) {
+            if (arr[i] % 2 != 0) {
                 res[j] = arr[i];
                 j++;
             }
@@ -36,3 +36,7 @@ public class SortArrayByParity {
     }
 
 }
+
+
+// Time complexity - 0(n)
+// Space complexity - 0(n)

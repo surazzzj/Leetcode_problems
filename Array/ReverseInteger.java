@@ -35,3 +35,7 @@ public class ReverseInteger {
 
     }
 }
+
+
+// Time complexity - O(nlogn)
+// Space complexity - 0(1)
